@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Pinky Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1884487510191959540, guid: 4298e513ce4a04c97aea84b225c74fdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3897836292469444344, guid: 4298e513ce4a04c97aea84b225c74fdd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -234,7 +238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120418075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.5, y: 0.5, z: -5}
+  m_LocalPosition: {x: -14.5, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -302,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 5948454569551892764, guid: 3a2140c53a96d4d56a9c3898bf6e31b2, type: 3}
       propertyPath: m_Name
       value: Ghost_Clide Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948454569551892764, guid: 3a2140c53a96d4d56a9c3898bf6e31b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9132677690884764176, guid: 3a2140c53a96d4d56a9c3898bf6e31b2, type: 3}
       propertyPath: m_RootOrder
@@ -3808,11 +3816,12 @@ GameObject:
   m_Component:
   - component: {fileID: 814998288}
   - component: {fileID: 814998287}
-  - component: {fileID: 814998286}
+  - component: {fileID: 814998294}
   - component: {fileID: 814998285}
   - component: {fileID: 814998291}
   - component: {fileID: 814998293}
   - component: {fileID: 814998292}
+  - component: {fileID: 814998295}
   m_Layer: 6
   m_Name: Pacman
   m_TagString: Untagged
@@ -3836,27 +3845,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
---- !u!50 &814998286
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814998283}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 66bf9ec6bc00b406b929a466d1d02792, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!212 &814998287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3978,6 +3966,43 @@ MonoBehaviour:
   passege_Right: {fileID: 1055982258}
   connection_Left: {fileID: 1952945699}
   connection_Right: {fileID: 1895411804}
+--- !u!50 &814998294
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814998283}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &814998295
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814998283}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.8
 --- !u!1 &831702546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1884487510191959540, guid: 4298e513ce4a04c97aea84b225c74fdd, type: 3}
@@ -4093,6 +4118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Inky Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8696602927818301252, guid: d98a0724d105d424683c026f938e6d1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d98a0724d105d424683c026f938e6d1e, type: 3}
 --- !u!1 &1055982258
@@ -4120,7 +4149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055982258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.5, y: 0.5, z: -5}
+  m_LocalPosition: {x: 14.5, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9829,6 +9858,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1627474931741090733, guid: 7bf58003dabaa4aadb20ff4da262a9ec, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2903136391246772227, guid: 7bf58003dabaa4aadb20ff4da262a9ec, type: 3}
       propertyPath: passege_Left
       value: 
@@ -9845,6 +9878,10 @@ PrefabInstance:
       propertyPath: connection_Right
       value: 
       objectReference: {fileID: 1895411804}
+    - target: {fileID: 4043638200326749117, guid: 7bf58003dabaa4aadb20ff4da262a9ec, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5436072022673385834, guid: 7bf58003dabaa4aadb20ff4da262a9ec, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -9924,7 +9961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895411804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.5, y: 0.5, z: 0}
+  m_LocalPosition: {x: 12.5, y: 0.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10039,7 +10076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952945699}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.5, y: 0.5, z: 0}
+  m_LocalPosition: {x: -12.5, y: 0.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
